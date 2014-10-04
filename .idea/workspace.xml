@@ -26,21 +26,31 @@
       <file leaf-file-name="Bdd4JTests.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.086513996" vertical-offset="204" max-vertical-offset="680">
+            <state vertical-scroll-proportion="-0.3409669" vertical-offset="355" max-vertical-offset="850">
               <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotNestedTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedTest.java">
+      <file leaf-file-name="NotNestedPassingTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="595">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="952">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bdd4J.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1003">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,8 +73,11 @@
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/WithSingleEstabilish.java" />
         <option value="$PROJECT_DIR$/src/main/java/bdd4J/Because.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/SingleEstabilishBecauseAndIt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bdd4J/It.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java" />
       </list>
     </option>
   </component>
@@ -272,7 +285,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -582,12 +601,12 @@
       <updated>1412416919870</updated>
       <workItem from="1412416923060" duration="8000" />
       <workItem from="1412416966126" duration="4343000" />
-      <workItem from="1412421648853" duration="3799000" />
+      <workItem from="1412421648853" duration="4728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8150000" />
+    <option name="totallyTimeSpent" value="9079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -667,7 +686,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -695,14 +714,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="561">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
@@ -820,17 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.173028" vertical-offset="236" max-vertical-offset="935">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-          <folding>
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29014084" vertical-offset="271" max-vertical-offset="731">
@@ -847,10 +852,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/It.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="595">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.259542" vertical-offset="0" max-vertical-offset="393">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1003">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="952">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -859,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.086513996" vertical-offset="204" max-vertical-offset="680">
+        <state vertical-scroll-proportion="-0.3409669" vertical-offset="355" max-vertical-offset="850">
           <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding />
         </state>

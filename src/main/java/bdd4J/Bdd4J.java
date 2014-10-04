@@ -16,12 +16,14 @@ import static org.junit.runner.Description.createTestDescription;
 public class Bdd4J extends Runner {
     private final List<Estabilish> estabilishes;
     private final List<Because> becauses;
+    private final List<It> its;
 
     public Bdd4J(Class testClass) throws IllegalAccessException, InstantiationException {
         Object testInstance = testClass.newInstance();
 
         estabilishes = resolveFieldsOfType(Estabilish.class, testInstance);
         becauses = resolveFieldsOfType(Because.class, testInstance);
+        its = resolveFieldsOfType(It.class, testInstance);
     }
 
     private static <T> List<T> resolveFieldsOfType(Class<T> fieldType, Object testInstance) throws IllegalAccessException {
@@ -52,6 +54,10 @@ public class Bdd4J extends Runner {
 
         for(Because because : becauses) {
             because.invoke();
+        }
+
+        for(It it : its) {
+            it.invoke();
         }
     }
 }
