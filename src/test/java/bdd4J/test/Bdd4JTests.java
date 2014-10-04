@@ -1,5 +1,6 @@
 package bdd4J.test;
 
+import bdd4J.test.fixtures.FailingTest;
 import bdd4J.test.fixtures.NotNestedPassingTest;
 import org.junit.Before;
 import org.junit.Test;
@@ -41,6 +42,12 @@ public class Bdd4JTests {
         Assert.assertTrue("Assertion failed, but should not", result.getFailures().size() == 0);
     }
 
+    @Test
+    public void testIsNotPassingWithSingleFailingIT() {
+        Result result = RunTest(FailingTest.class);
+
+        Assert.assertTrue("Assertion not failed, but should", result.getFailures().size() == 1);
+    }
 
     private static Result RunTest(Class testClass) {
         JUnitCore runner = new JUnitCore();
