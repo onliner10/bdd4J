@@ -15,20 +15,28 @@ import static org.junit.runner.Description.createTestDescription;
  */
 public class Bdd4J extends Runner {
     private final List<Estabilish> estabilishes;
+    private final List<Because> becauses;
 
     public Bdd4J(Class testClass) throws IllegalAccessException, InstantiationException {
         Object testInstance = testClass.newInstance();
 
-        estabilishes = new ArrayList<Estabilish>();
+        estabilishes = resolveFieldsOfType(Estabilish.class, testInstance);
+        becauses = resolveFieldsOfType(Because.class, testInstance);
+    }
 
-        for(Field field : testClass.getDeclaredFields()) {
-            if(field.getType() == Estabilish.class) {
+    private static <T> List<T> resolveFieldsOfType(Class<T> fieldType, Object testInstance) throws IllegalAccessException {
+        List<T> result = new ArrayList<T>();
+
+        for(Field field : testInstance.getClass().getDeclaredFields()) {
+            if(field.getType() == fieldType) {
                 field.setAccessible(true);
 
-                Estabilish e = (Estabilish)field.get(testInstance);
-                estabilishes.add(e);
+                T e = (T)field.get(testInstance);
+                result.add(e);
             }
         }
+
+        return result;
     }
 
     @Override
@@ -40,6 +48,10 @@ public class Bdd4J extends Runner {
     public void run(RunNotifier runNotifier) {
         for (Estabilish estabilish : estabilishes) {
             estabilish.invoke();
+        }
+
+        for(Because because : becauses) {
+            because.invoke();
         }
     }
 }
