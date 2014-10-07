@@ -1,9 +1,13 @@
 package bdd4J.test;
 
 import bdd4J.Bdd4J;
+import bdd4J.Because;
+import bdd4J.Estabilish;
+import bdd4J.It;
 import bdd4J.test.fixtures.FailingTest;
 import bdd4J.test.fixtures.MultipleItsTest;
 import bdd4J.test.fixtures.NotNestedPassingTest;
+import bdd4J.test.helpers.RunnerHelper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.*;
@@ -19,36 +23,36 @@ public class Bdd4JTests {
 
     @Before
     public void setUp() {
-        NotNestedPassingTest.wasEstabilishRun = false;
-        NotNestedPassingTest.wasBecauseRun = false;
-        NotNestedPassingTest.wasItRun = false;
+        NotNestedPassingTest.invokationOrder.clear();
     }
 
     @Test
     public void itIsAbleToRunSingleEstabilish() {
-        Result result = RunTest(NotNestedPassingTest.class);
+        Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertTrue("Estabilish was not run", NotNestedPassingTest.wasEstabilishRun);
+        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
     }
 
     @Test
     public void itIsAbleToRunSingleBecause() {
-        Result result = RunTest(NotNestedPassingTest.class);
+        Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertTrue("Because was not run, or estabilish was not run before becuase", NotNestedPassingTest.wasBecauseRun);
+        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
+        Assert.assertEquals("Because was not run", NotNestedPassingTest.invokationOrder.get(1), Because.class);
     }
 
     @Test
     public void testPassesWithSinglePassingIt() {
-        Result result = RunTest(NotNestedPassingTest.class);
+        Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertTrue("It was not run", NotNestedPassingTest.wasItRun);
-        Assert.assertTrue("Assertion failed, but should not", result.getFailures().size() == 0);
+        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
+        Assert.assertEquals("Because was not run", NotNestedPassingTest.invokationOrder.get(1), Because.class);
+        Assert.assertEquals("It was not run", NotNestedPassingTest.invokationOrder.get(2), It.class);
     }
 
     @Test
     public void testIsNotPassingWithSingleFailingIT() {
-        Result result = RunTest(FailingTest.class);
+        Result result = RunnerHelper.RunTest(FailingTest.class);
 
         Assert.assertTrue("Assertion not failed, but should", result.getFailures().size() == 1);
     }
@@ -69,8 +73,4 @@ public class Bdd4JTests {
                 actualDescription.getChildren().toArray());
     }
 
-    private static Result RunTest(Class testClass) {
-        JUnitCore runner = new JUnitCore();
-        return runner.run(testClass);
-    }
 }

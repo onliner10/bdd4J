@@ -1,11 +1,11 @@
 package bdd4J.test.fixtures;
 
-import bdd4J.Bdd4J;
-import bdd4J.Because;
-import bdd4J.Estabilish;
-import bdd4J.It;
+import bdd4J.*;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Mateusz on 10/4/2014.
@@ -14,37 +14,21 @@ import org.junit.runner.RunWith;
 @RunWith(Bdd4J.class)
 public class NotNestedPassingTest {
 
-    public static boolean wasEstabilishRun = false;
-    public static boolean wasBecauseRun = false;
-    public static boolean wasItRun = false;
+    public static List<Class> invokationOrder = new ArrayList<Class>();
 
     Estabilish that_var_estabilish_run_is_set_to_true = ()
-            -> wasEstabilishRun = true;
+            -> invokationOrder.add(Estabilish.class);
 
     Because of_changing_variable_value = () -> {
-        AssertEstabilishRun();
-
-        wasBecauseRun = true;
+        invokationOrder.add(Because.class);
     };
 
     It passes_correct_assertion = () -> {
-        AssertEstabilishRun();
-        AssertBecauseRun();
-        wasItRun = true;
-
+        invokationOrder.add(It.class);
         Assert.assertTrue(true);
     };
 
-    private void AssertEstabilishRun() {
-        if(false == wasEstabilishRun) {
-            throw new AssertionError("Estabilish was not run at the right time, or at all!");
-        }
-    }
-
-    private void AssertBecauseRun() {
-        if(false == wasBecauseRun) {
-            throw new AssertionError("Because was not run at the right time, or at all!!");
-        }
-    }
-
+    Cleanup cleanup = () -> {
+        invokationOrder.add(Cleanup.class);
+    };
 }
