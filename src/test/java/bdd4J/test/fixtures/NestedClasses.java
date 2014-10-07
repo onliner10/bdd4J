@@ -35,6 +35,9 @@ public class NestedClasses {
 
     }
 
+    public static int invokationOrderOf(String delegateName) {
+        return invokationOrder.indexOf(delegateName);
+    }
 
     public static final String TOP_LEVEL_ESTABILISH = "1st estabilish";
     public static final String TOP_LEVEL_BECAUSE = "1st because";
