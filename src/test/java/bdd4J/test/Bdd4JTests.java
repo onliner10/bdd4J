@@ -1,9 +1,9 @@
 package bdd4J.test;
 
 import bdd4J.Bdd4J;
-import bdd4J.Because;
-import bdd4J.Estabilish;
-import bdd4J.It;
+import bdd4J.delegates.Because;
+import bdd4J.delegates.Estabilish;
+import bdd4J.delegates.It;
 import bdd4J.test.fixtures.FailingTest;
 import bdd4J.test.fixtures.MultipleItsTest;
 import bdd4J.test.fixtures.NotNestedPassingTest;

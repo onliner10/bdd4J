@@ -1,4 +1,4 @@
-package bdd4J;
+package bdd4J.delegates;
 
 /**
  * Created by mateusz.urban on 10/7/2014.

@@ -1,6 +1,10 @@
 package bdd4J.test.fixtures;
 
 import bdd4J.*;
+import bdd4J.delegates.Because;
+import bdd4J.delegates.Cleanup;
+import bdd4J.delegates.Estabilish;
+import bdd4J.delegates.It;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 

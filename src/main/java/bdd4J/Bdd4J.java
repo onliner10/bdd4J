@@ -1,5 +1,8 @@
 package bdd4J;
 
+import bdd4J.delegates.Because;
+import bdd4J.delegates.Estabilish;
+import bdd4J.delegates.It;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.RunNotifier;

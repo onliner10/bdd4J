@@ -1,6 +1,9 @@
 package bdd4J.test.fixtures;
 
 import bdd4J.*;
+import bdd4J.delegates.Because;
+import bdd4J.delegates.Estabilish;
+import bdd4J.delegates.It;
 import org.junit.runner.RunWith;
 
 /**
