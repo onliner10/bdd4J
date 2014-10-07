@@ -18,7 +18,7 @@ public class NotNestedPassingTest {
     public static boolean wasBecauseRun = false;
     public static boolean wasItRun = false;
 
-    Estabilish was_estabilish_run_is_true = ()
+    Estabilish that_var_estabilish_run_is_set_to_true = ()
             -> wasEstabilishRun = true;
 
     Because of_changing_variable_value = () -> {
