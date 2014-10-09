@@ -5,6 +5,7 @@ import bdd4J.delegates.Estabilish;
 import bdd4J.delegates.It;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
+import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 
 import java.lang.reflect.Field;
@@ -20,10 +21,13 @@ public class Bdd4J extends Runner {
     private final Map<String, Estabilish> estabilishes;
     private final Map<String, Because> becauses;
     private final Map<String, It> its;
+
+    private Map<It, Description> itToDescription;
     private Class testClass;
 
     public Bdd4J(Class testClass) throws IllegalAccessException, InstantiationException {
         this.testClass = testClass;
+        this.itToDescription = new HashMap<>();
 
         Object testInstance = testClass.newInstance();
 
@@ -48,23 +52,39 @@ public class Bdd4J extends Runner {
         }
 
         for(It it : its.values()) {
-            it.invoke();
+            Description testDescription = itToDescription.get(it);
+            runNotifier.fireTestStarted(testDescription);
+
+            try {
+                it.invoke();
+            }
+            catch (Exception e) {
+                runNotifier.fireTestFailure(
+                        new Failure(testDescription, e)
+                );
+            }
+
+            runNotifier.fireTestFinished(testDescription);
         }
     }
 
     private Description createSuiteRecursiveFor(Class testClass) {
-        Description suiteRecursiveFor = createSuiteRecursiveFor(testClass, null);
-        return suiteRecursiveFor;
+        return createSuiteRecursiveFor(testClass, null);
     }
 
     private Description createSuiteRecursiveFor(Class testClass, Description recursiveDescription) {
         String suiteName = suiteNameFor(testClass);
         Description description = Description.createSuiteDescription(suiteName);
 
-        for(String itName : getNamesFor(its)){
-            description.addChild(createTestDescription(testClass, "It " + itName));
-        }
+        for(Map.Entry<String, It> it : its.entrySet()){
+            Description testDescription =
+                    createTestDescription(
+                        testClass,
+                        "It " + it.getKey().replace('_', ' '));
 
+            itToDescription.put(it.getValue(), testDescription);
+            description.addChild(testDescription);
+        }
         recursiveDescription = addAsChildTo(description, recursiveDescription);
 
         List<Class> nestedClassesInCorrectOrder = Arrays.asList(testClass.getDeclaredClasses());
