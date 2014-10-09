@@ -37,39 +37,6 @@ public class Bdd4J extends Runner {
         return createSuiteRecursiveFor(testClass);
     }
 
-    private Description createSuiteRecursiveFor(Class testClass) {
-        Description suiteRecursiveFor = createSuiteRecursiveFor(testClass, null);
-        return suiteRecursiveFor;
-    }
-
-    private Description createSuiteRecursiveFor(Class testClass, Description recursiveDescription) {
-        String suiteName = MessageFormat.format("{0}, {1}",
-                testClass.getSimpleName().replace('_', ' '),
-                "because " + firstOrDefault(getNamesFor(becauses)));
-
-        Description description = Description.createSuiteDescription(suiteName);
-
-        for(String itName : getNamesFor(its)){
-            description.addChild(createTestDescription(testClass, "It " + itName));
-        }
-
-        if(recursiveDescription == null) {
-            recursiveDescription = description;
-        }
-        else {
-            recursiveDescription.addChild(description);
-        }
-
-        List<Class> nestedClassesInCorrectOrder = Arrays.asList(testClass.getDeclaredClasses());
-        Collections.reverse(nestedClassesInCorrectOrder);
-
-        for(Class nestedClass : nestedClassesInCorrectOrder) {
-            createSuiteRecursiveFor(nestedClass, description);
-        }
-
-        return recursiveDescription;
-    }
-
     @Override
     public void run(RunNotifier runNotifier) {
         for (Estabilish estabilish : estabilishes.values()) {
@@ -83,6 +50,47 @@ public class Bdd4J extends Runner {
         for(It it : its.values()) {
             it.invoke();
         }
+    }
+
+    private Description createSuiteRecursiveFor(Class testClass) {
+        Description suiteRecursiveFor = createSuiteRecursiveFor(testClass, null);
+        return suiteRecursiveFor;
+    }
+
+    private Description createSuiteRecursiveFor(Class testClass, Description recursiveDescription) {
+        String suiteName = suiteNameFor(testClass);
+        Description description = Description.createSuiteDescription(suiteName);
+
+        for(String itName : getNamesFor(its)){
+            description.addChild(createTestDescription(testClass, "It " + itName));
+        }
+
+        recursiveDescription = addAsChildTo(description, recursiveDescription);
+
+        List<Class> nestedClassesInCorrectOrder = Arrays.asList(testClass.getDeclaredClasses());
+        Collections.reverse(nestedClassesInCorrectOrder);
+
+        for(Class nestedClass : nestedClassesInCorrectOrder) {
+            createSuiteRecursiveFor(nestedClass, description);
+        }
+
+        return recursiveDescription;
+    }
+
+    private Description addAsChildTo(Description description, Description recursiveDescription) {
+        if(recursiveDescription == null) {
+            recursiveDescription = description;
+        }
+        else {
+            recursiveDescription.addChild(description);
+        }
+        return recursiveDescription;
+    }
+
+    private String suiteNameFor(Class testClass) {
+        return MessageFormat.format("{0}, {1}",
+                testClass.getSimpleName().replace('_', ' '),
+                "because " + firstOrDefault(getNamesFor(becauses)));
     }
 
     private String firstOrDefault(List<String> list) {

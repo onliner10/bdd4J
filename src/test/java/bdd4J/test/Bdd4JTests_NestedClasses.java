@@ -28,12 +28,24 @@ public class Bdd4JTests_NestedClasses {
     public void itShouldCreateSuiteWithNestedClasses() throws InstantiationException, IllegalAccessException {
         Description expectedDescription = Description.createSuiteDescription("NestedClasses, because top level because");
 
-        Description firstNestedDescription = Description.createSuiteDescription("first nested class, because top level because");
-        firstNestedDescription.addChild(Description.createTestDescription(NestedClasses.first_nested_class.class, "It first nested it"));
+        Description firstNestedDescription =
+                Description.createSuiteDescription("first nested class, because top level because");
+
+        firstNestedDescription.addChild(
+                Description.createTestDescription(
+                        NestedClasses.first_nested_class.class,
+                        "It first nested it"));
+
         expectedDescription.addChild(firstNestedDescription);
 
-        Description secondNestedDescription = Description.createSuiteDescription("second nested class, because top level because");
-        secondNestedDescription.addChild(Description.createTestDescription(NestedClasses.second_nested_class.class, "It second nested it"));
+        Description secondNestedDescription =
+                Description.createSuiteDescription("second nested class, because top level because");
+
+        secondNestedDescription.addChild(
+                Description.createTestDescription(
+                        NestedClasses.second_nested_class.class,
+                        "It second nested it"));
+
         expectedDescription.addChild(secondNestedDescription);
 
         Bdd4J bdd4j = new Bdd4J(NestedClasses.class);

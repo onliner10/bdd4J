@@ -51,6 +51,13 @@ public class Bdd4JTests {
     }
 
     @Test
+    public void itShouldThatTestsStarted() {
+        Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
+
+        Assert.assertEquals(1, result.getRunCount());
+    }
+
+    @Test
     public void testIsNotPassingWithSingleFailingIT() {
         Result result = RunnerHelper.RunTest(FailingTest.class);
 
