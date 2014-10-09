@@ -59,7 +59,7 @@ public class Bdd4JTests {
 
     @Test
     public void itCreatesCorrectDescription() throws InstantiationException, IllegalAccessException {
-        Description expectedDescription = Description.createSuiteDescription("MultipleItsTest, some estabilish, because of some because");
+        Description expectedDescription = Description.createSuiteDescription("MultipleItsTest, because of some because");
         expectedDescription.addChild(createTestDescription(MultipleItsTest.class, "It should do sth 1"));
         expectedDescription.addChild(createTestDescription(MultipleItsTest.class, "It should do sth 2"));
         expectedDescription.addChild(createTestDescription(MultipleItsTest.class, "It should do sth 3"));

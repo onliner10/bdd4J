@@ -22,14 +22,14 @@ public class NestedClasses {
 
     Because top_level_because = () -> invokationOrder.add(TOP_LEVEL_BECAUSE);
 
-    class first_nested_class {
+    public class first_nested_class {
 
         Estabilish first_nested_estabilish = () -> invokationOrder.add(FIRST_NESTED_ESTABILISH);
 
         It first_nested_it = () -> invokationOrder.add(FIRST_NESTED_IT);
 
     }
-    class second_nested_class {
+    public class second_nested_class {
 
         Estabilish second_nested_estabilish = () -> invokationOrder.add(SECOND_NESTED_ESTABILISH);
 
