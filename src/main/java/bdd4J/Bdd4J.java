@@ -1,6 +1,7 @@
 package bdd4J;
 
 import bdd4J.delegates.Because;
+import bdd4J.delegates.Cleanup;
 import bdd4J.delegates.Estabilish;
 import bdd4J.delegates.It;
 import junit.framework.AssertionFailedError;
@@ -8,6 +9,7 @@ import org.junit.runner.Description;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
+import org.omg.CORBA.portable.ApplicationException;
 
 import java.lang.reflect.Field;
 import java.text.MessageFormat;
@@ -19,22 +21,12 @@ import static org.junit.runner.Description.createTestDescription;
  * Created by Mateusz on 10/4/2014.
  */
 public class Bdd4J extends Runner {
-    private final Map<String, Estabilish> estabilishes;
-    private final Map<String, Because> becauses;
-    private final Map<String, It> its;
-
     private Map<It, Description> itToDescription;
     private Class testClass;
 
-    public Bdd4J(Class testClass) throws IllegalAccessException, InstantiationException {
+    public Bdd4J(Class testClass) {
         this.testClass = testClass;
         this.itToDescription = new HashMap<>();
-
-        Object testInstance = testClass.newInstance();
-
-        estabilishes = resolveFieldsOfType(Estabilish.class, testInstance);
-        becauses = resolveFieldsOfType(Because.class, testInstance);
-        its = resolveFieldsOfType(It.class, testInstance);
     }
 
     @Override
@@ -44,6 +36,26 @@ public class Bdd4J extends Runner {
 
     @Override
     public void run(RunNotifier runNotifier) {
+        runClass(testClass, runNotifier);
+    }
+
+    private void runClass(Class classToRun, RunNotifier runNotifier) {
+        Map<String, Estabilish> estabilishes = null;
+        Map<String, Because> becauses = null;
+        Map<String, It> its = null;
+        Map<String, Cleanup> cleanups = null;
+
+        try {
+            Object testInstance = createInstanceOf(classToRun);
+
+            estabilishes = resolveFieldsOfType(Estabilish.class, testInstance);
+            becauses = resolveFieldsOfType(Because.class, testInstance);
+            its = resolveFieldsOfType(It.class, testInstance);
+            cleanups = resolveFieldsOfType(Cleanup.class, testInstance);
+        } catch (Exception e) {
+            throw new RuntimeException("Cannot resolve required delegates to run test");
+        }
+
         for (Estabilish estabilish : estabilishes.values()) {
             estabilish.invoke();
         }
@@ -67,20 +79,38 @@ public class Bdd4J extends Runner {
 
             runNotifier.fireTestFinished(testDescription);
         }
+
+        List<Class> nestedClassesInCorrectOrder = Arrays.asList(classToRun.getDeclaredClasses());
+        Collections.reverse(nestedClassesInCorrectOrder);
+
+        for(Class nestedClass : nestedClassesInCorrectOrder) {
+            runClass(nestedClass, runNotifier);
+        }
+
+        for(Cleanup c : cleanups.values()) {
+            c.invoke();
+        }
     }
 
     private Description createSuiteRecursiveFor(Class testClass) {
         return createSuiteRecursiveFor(testClass, null);
     }
 
-    private Description createSuiteRecursiveFor(Class testClass, Description recursiveDescription) {
-        String suiteName = suiteNameFor(testClass);
+    private Description createSuiteRecursiveFor(Class clazz, Description recursiveDescription) {
+        String suiteName = suiteNameFor(clazz);
         Description description = Description.createSuiteDescription(suiteName);
+
+        Map<String, It> its = null;
+        try {
+            its = resolveFieldsOfType(It.class, createInstanceOf(clazz));
+        } catch (Exception e) {
+            throw new RuntimeException("Cannot resolve required delegates to run test");
+        }
 
         for(Map.Entry<String, It> it : its.entrySet()){
             Description testDescription =
                     createTestDescription(
-                        testClass,
+                        clazz,
                         "It " + it.getKey().replace('_', ' '));
 
             itToDescription.put(it.getValue(), testDescription);
@@ -88,7 +118,7 @@ public class Bdd4J extends Runner {
         }
         recursiveDescription = addAsChildTo(description, recursiveDescription);
 
-        List<Class> nestedClassesInCorrectOrder = Arrays.asList(testClass.getDeclaredClasses());
+        List<Class> nestedClassesInCorrectOrder = Arrays.asList(clazz.getDeclaredClasses());
         Collections.reverse(nestedClassesInCorrectOrder);
 
         for(Class nestedClass : nestedClassesInCorrectOrder) {
@@ -108,10 +138,34 @@ public class Bdd4J extends Runner {
         return recursiveDescription;
     }
 
-    private String suiteNameFor(Class testClass) {
-        return MessageFormat.format("{0}, {1}",
-                testClass.getSimpleName().replace('_', ' '),
-                "because " + firstOrDefault(getNamesFor(becauses)));
+    private String suiteNameFor(Class clazz) {
+        Map<String, Because> becauses = null;
+
+        try {
+            becauses = resolveFieldsOfType(Because.class, createInstanceOf(clazz));
+        } catch (Exception e) {
+            throw new RuntimeException("Cannot resolve required delegates to run test");
+        }
+
+        String becauseName = firstOrDefault(getNamesFor(becauses));
+
+        if(becauseName != "") {
+            return MessageFormat.format("{0}, {1}",
+                    clazz.getSimpleName().replace('_', ' '),
+                    "because " + becauseName);
+        }
+
+        return clazz.getSimpleName().replace('_', ' ');
+    }
+
+    private Object createInstanceOf(Class clazz) throws InstantiationException, IllegalAccessException, java.lang.reflect.InvocationTargetException {
+        Object classInstance = null;
+        if(clazz == testClass) {
+            classInstance = clazz.newInstance();
+        } else {
+            classInstance = clazz.getConstructors()[0].newInstance(testClass.newInstance());
+        }
+        return classInstance;
     }
 
     private String firstOrDefault(List<String> list) {

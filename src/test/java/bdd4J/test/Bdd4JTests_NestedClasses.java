@@ -29,7 +29,7 @@ public class Bdd4JTests_NestedClasses {
         Description expectedDescription = Description.createSuiteDescription("NestedClasses, because top level because");
 
         Description firstNestedDescription =
-                Description.createSuiteDescription("first nested class, because top level because");
+                Description.createSuiteDescription("first nested class");
 
         firstNestedDescription.addChild(
                 Description.createTestDescription(
@@ -39,7 +39,7 @@ public class Bdd4JTests_NestedClasses {
         expectedDescription.addChild(firstNestedDescription);
 
         Description secondNestedDescription =
-                Description.createSuiteDescription("second nested class, because top level because");
+                Description.createSuiteDescription("second nested class, because nested because");
 
         secondNestedDescription.addChild(
                 Description.createTestDescription(
@@ -62,15 +62,22 @@ public class Bdd4JTests_NestedClasses {
         Result result = RunTest(NestedClasses.class);
 
         String estabilishesNotInTheRightOrder = "Estabilishes are not invoked in the right order";
-        String itsNotInTheRightOrder = "Estabilishes are not invoked in the right order";
+        String itsNotInTheRightOrder = "Its are not invoked in the right order";
+        String cleanupNotInTheRightOrder = "Cleanups are not invoked in the right order";
+        String becauseNotInRightOrder = "Because is not invoked in the right order";
 
         Assert.assertEquals(estabilishesNotInTheRightOrder,              0, invokationOrderOf(NestedClasses.TOP_LEVEL_ESTABILISH));
-        Assert.assertEquals("Because is not invoked in the right order", 1, invokationOrderOf(NestedClasses.TOP_LEVEL_BECAUSE));
+        Assert.assertEquals(becauseNotInRightOrder,                      1, invokationOrderOf(NestedClasses.TOP_LEVEL_BECAUSE));
 
         Assert.assertEquals(estabilishesNotInTheRightOrder,              2, invokationOrderOf(NestedClasses.FIRST_NESTED_ESTABILISH));
         Assert.assertEquals(itsNotInTheRightOrder,                       3, invokationOrderOf(NestedClasses.FIRST_NESTED_IT));
+        Assert.assertEquals(cleanupNotInTheRightOrder,                   4, invokationOrderOf(NestedClasses.FIRST_NESTED_CLEANUP));
 
-        Assert.assertEquals(estabilishesNotInTheRightOrder,              4, invokationOrderOf(NestedClasses.SECOND_NESTED_ESTABILISH));
-        Assert.assertEquals(itsNotInTheRightOrder,                       5, invokationOrderOf(NestedClasses.SECOND_NESTED_IT));
+        Assert.assertEquals(estabilishesNotInTheRightOrder,              5, invokationOrderOf(NestedClasses.SECOND_NESTED_ESTABILISH));
+        Assert.assertEquals(estabilishesNotInTheRightOrder,              6, invokationOrderOf(NestedClasses.SECOND_NESTED_BECAUSE));
+        Assert.assertEquals(itsNotInTheRightOrder,                       7, invokationOrderOf(NestedClasses.SECOND_NESTED_IT));
+        Assert.assertEquals(cleanupNotInTheRightOrder,                   8, invokationOrderOf(NestedClasses.SECOND_NESTED_CLEANUP));
+
+        Assert.assertEquals(cleanupNotInTheRightOrder,                   9, invokationOrderOf(NestedClasses.TOP_LEVEL_CLEANUP));
     }
 }
