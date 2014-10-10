@@ -3,6 +3,7 @@ package bdd4J;
 import bdd4J.delegates.Because;
 import bdd4J.delegates.Estabilish;
 import bdd4J.delegates.It;
+import junit.framework.AssertionFailedError;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.Failure;
@@ -58,7 +59,7 @@ public class Bdd4J extends Runner {
             try {
                 it.invoke();
             }
-            catch (Exception e) {
+            catch (AssertionFailedError e) {
                 runNotifier.fireTestFailure(
                         new Failure(testDescription, e)
                 );

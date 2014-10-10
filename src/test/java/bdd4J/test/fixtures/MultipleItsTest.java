@@ -16,9 +16,10 @@ public class MultipleItsTest {
 
     Because of_some_because = () -> { };
 
-    It should_do_sth_1 = () -> { };
+    It should_do_sth_1 = () -> {
+        Assert.assertTrue(false); };
 
-    It should_do_sth_2 = () -> { };
+    It should_do_sth_2 = () -> {Assert.assertTrue(false); };
 
     It should_do_sth_3 = () -> { };
 }

@@ -9,10 +9,14 @@ import bdd4J.test.fixtures.MultipleItsTest;
 import bdd4J.test.fixtures.NotNestedPassingTest;
 import bdd4J.test.helpers.RunnerHelper;
 import org.junit.Before;
+import junit.framework.ComparisonFailure;
 import org.junit.Test;
 import org.junit.runner.*;
 
 import org.junit.Assert;
+import org.junit.runner.notification.Failure;
+
+import java.util.List;
 
 import static org.junit.runner.Description.createTestDescription;
 
@@ -55,6 +59,18 @@ public class Bdd4JTests {
         Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
         Assert.assertEquals(1, result.getRunCount());
+    }
+
+    @Test
+    public void itShouldFailWithAppropiateException() {
+        Result result = RunnerHelper.RunTest(FailingTest.class);
+        Failure failure = result.getFailures().get(0);
+
+        Assert.assertEquals(1, result.getFailureCount());
+        Assert.assertEquals(ComparisonFailure.class, failure.getException().getClass());
+        Assert.assertEquals(
+                "expected:<[expected]> but was:<[actual, because of which it will fail]>",
+                failure.getMessage());
     }
 
     @Test

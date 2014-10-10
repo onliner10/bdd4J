@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Bdd4J.class)
 public class FailingTest {
-    It should_fail = () -> Assert.assertTrue(false);
+    It should_fail = () -> Assert.assertEquals("expected", "actual, because of which it will fail");
 }
