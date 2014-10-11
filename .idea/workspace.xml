@@ -23,44 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Bdd4JTests_NestedClasses.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests_NestedClasses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7293355" vertical-offset="550" max-vertical-offset="1480">
-              <caret line="65" column="78" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NestedClasses.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NestedClasses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1220">
-              <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-              <folding>
-                <element signature="e#427#435#0" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bdd4J.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Bdd4J.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1058" max-vertical-offset="3440">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.51890033" vertical-offset="710" max-vertical-offset="1292">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding>
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
+                <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+                <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+                <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+                <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+                <element signature="e#5507#5518#0" expanded="true" />
+                <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+                <element signature="e#6011#6019#0" expanded="true" />
                 <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
                 <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-                <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-                <element signature="e#6222#6233#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,17 +72,17 @@
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/MultipleItsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/FailingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests_NestedClasses.java" />
         <option value="$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NestedClasses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="22" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -135,7 +112,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,6 +234,24 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdd4J" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdd4J" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -268,7 +263,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -749,14 +744,15 @@
       <workItem from="1412854916732" duration="8397000" />
       <workItem from="1412929460419" duration="695000" />
       <workItem from="1412948891610" duration="3475000" />
+      <workItem from="1413021463510" duration="138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30614000" />
+    <option name="totallyTimeSpent" value="30752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -764,7 +760,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39874738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -773,26 +768,27 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32672232" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258427" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32672232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -810,8 +806,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -833,14 +829,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="36" />
     </breakpoint-manager>
   </component>
@@ -849,18 +837,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
+            <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests_NestedClasses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="765">
-          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -870,14 +868,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1530">
           <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -890,20 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NestedClasses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="952">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,14 +901,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="1700">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,20 +922,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/MultipleItsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="442">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="952">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,14 +934,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1700">
           <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -974,20 +955,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/MultipleItsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="442">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="952">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,14 +967,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1700">
           <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1020,9 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="952">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,14 +1000,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1581">
           <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1055,9 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="952">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,14 +1033,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1581">
           <caret line="56" column="74" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="74" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1090,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="952">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,14 +1066,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1173">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1134,14 +1100,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="561">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1150,9 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="442">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1249,28 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/helpers/RunnerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3241491" vertical-offset="0" max-vertical-offset="617">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NotNestedPassingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48622367" vertical-offset="60" max-vertical-offset="700">
           <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding>
-            <element signature="e#448#455#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/MultipleItsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38411668" vertical-offset="3" max-vertical-offset="620">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2917342" vertical-offset="0" max-vertical-offset="617">
           <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,56 +1235,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/delegates/Estabilish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19448946" vertical-offset="0" max-vertical-offset="617">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34901962" vertical-offset="802" max-vertical-offset="1440">
           <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bdd4J/Bdd4J.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1058" max-vertical-offset="3440">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.51890033" vertical-offset="710" max-vertical-offset="1292">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
           <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="method#runClass#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#suiteNameFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#createInstanceOf#0;class#Bdd4J#0" expanded="false" />
+            <element signature="method#resolveFieldsOfType#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#5507#5518#0" expanded="true" />
+            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
+            <element signature="e#6011#6019#0" expanded="true" />
             <element signature="method#addAsChildTo#0;class#Bdd4J#0" expanded="false" />
             <element signature="method#firstOrDefault#0;class#Bdd4J#0" expanded="false" />
-            <element signature="method#getNamesFor#0;class#Bdd4J#0" expanded="false" />
-            <element signature="e#6222#6233#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/fixtures/NestedClasses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1220">
-          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
-          <folding>
-            <element signature="e#427#435#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bdd4J/test/Bdd4JTests_NestedClasses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7293355" vertical-offset="550" max-vertical-offset="1480">
-          <caret line="65" column="78" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>

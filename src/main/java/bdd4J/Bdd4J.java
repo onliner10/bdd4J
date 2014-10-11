@@ -128,16 +128,6 @@ public class Bdd4J extends Runner {
         return recursiveDescription;
     }
 
-    private Description addAsChildTo(Description description, Description recursiveDescription) {
-        if(recursiveDescription == null) {
-            recursiveDescription = description;
-        }
-        else {
-            recursiveDescription.addChild(description);
-        }
-        return recursiveDescription;
-    }
-
     private String suiteNameFor(Class clazz) {
         Map<String, Because> becauses = null;
 
@@ -168,23 +158,6 @@ public class Bdd4J extends Runner {
         return classInstance;
     }
 
-    private String firstOrDefault(List<String> list) {
-        if(list.size() == 0)
-            return "";
-
-        return list.get(0);
-    }
-
-    private <T> List<String> getNamesFor(Map<String, T> map) {
-        List<String> result = new ArrayList<String>();
-
-        for(String key : map.keySet()) {
-            result.add(key.replace('_', ' '));
-        }
-
-        return result;
-    }
-
     private static <T> Map<String, T> resolveFieldsOfType(Class<T> fieldType, Object testInstance) throws IllegalAccessException {
         Map<String, T> result = new HashMap<String, T>();
 
@@ -200,5 +173,32 @@ public class Bdd4J extends Runner {
         }
 
         return result;
+    }
+
+    private <T> List<String> getNamesFor(Map<String, T> map) {
+        List<String> result = new ArrayList<String>();
+
+        for(String key : map.keySet()) {
+            result.add(key.replace('_', ' '));
+        }
+
+        return result;
+    }
+
+    private Description addAsChildTo(Description description, Description recursiveDescription) {
+        if(recursiveDescription == null) {
+            recursiveDescription = description;
+        }
+        else {
+            recursiveDescription.addChild(description);
+        }
+        return recursiveDescription;
+    }
+
+    private String firstOrDefault(List<String> list) {
+        if(list.size() == 0)
+            return "";
+
+        return list.get(0);
     }
 }
