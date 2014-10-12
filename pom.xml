@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <name>Bdd4J</name>
     <description>BDD(Behaviour Drivven Development) test runner for JUnit, inspired by Machine.Specifications</description>
-    <groupId>onliner10</groupId>
+    <groupId>com.github.onliner10.bdd4J</groupId>
     <artifactId>bdd4J</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
