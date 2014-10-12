@@ -1,19 +1,15 @@
-package bdd4J.test;
+package com.github.onliner10.bdd4J.test;
 
-import bdd4J.Bdd4J;
-import bdd4J.test.fixtures.MultipleItsTest;
-import bdd4J.test.fixtures.NestedClasses;
+import com.github.onliner10.bdd4J.Bdd4J;
+import com.github.onliner10.bdd4J.test.fixtures.NestedClasses;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.Description;
 import org.junit.runner.Result;
 
-import java.text.MessageFormat;
-
-import static bdd4J.test.fixtures.NestedClasses.invokationOrderOf;
-import static bdd4J.test.helpers.RunnerHelper.RunTest;
-import static org.junit.runner.Description.createTestDescription;
+import static com.github.onliner10.bdd4J.test.fixtures.NestedClasses.invokationOrderOf;
+import static com.github.onliner10.bdd4J.test.helpers.RunnerHelper.RunTest;
 
 /**
  * Created by mateusz.urban on 10/7/2014.

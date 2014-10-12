@@ -1,4 +1,4 @@
-package bdd4J.test.helpers;
+package com.github.onliner10.bdd4J.test.helpers;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

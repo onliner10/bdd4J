@@ -1,10 +1,10 @@
-package bdd4J.test.fixtures;
+package com.github.onliner10.bdd4J.test.fixtures;
 
-import bdd4J.Bdd4J;
-import bdd4J.delegates.Because;
-import bdd4J.delegates.Cleanup;
-import bdd4J.delegates.Estabilish;
-import bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.Bdd4J;
+import com.github.onliner10.bdd4J.delegates.Because;
+import com.github.onliner10.bdd4J.delegates.Cleanup;
+import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.It;
 import org.junit.runner.RunWith;
 
 import java.util.ArrayList;

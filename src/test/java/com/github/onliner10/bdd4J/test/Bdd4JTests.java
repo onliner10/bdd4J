@@ -1,13 +1,13 @@
-package bdd4J.test;
+package com.github.onliner10.bdd4J.test;
 
-import bdd4J.Bdd4J;
-import bdd4J.delegates.Because;
-import bdd4J.delegates.Estabilish;
-import bdd4J.delegates.It;
-import bdd4J.test.fixtures.FailingTest;
-import bdd4J.test.fixtures.MultipleItsTest;
-import bdd4J.test.fixtures.NotNestedPassingTest;
-import bdd4J.test.helpers.RunnerHelper;
+import com.github.onliner10.bdd4J.Bdd4J;
+import com.github.onliner10.bdd4J.delegates.Because;
+import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.test.fixtures.FailingTest;
+import com.github.onliner10.bdd4J.test.fixtures.MultipleItsTest;
+import com.github.onliner10.bdd4J.test.fixtures.NotNestedPassingTest;
+import com.github.onliner10.bdd4J.test.helpers.RunnerHelper;
 import org.junit.Before;
 import junit.framework.ComparisonFailure;
 import org.junit.Test;
@@ -15,8 +15,6 @@ import org.junit.runner.*;
 
 import org.junit.Assert;
 import org.junit.runner.notification.Failure;
-
-import java.util.List;
 
 import static org.junit.runner.Description.createTestDescription;
 

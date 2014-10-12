@@ -1,15 +1,14 @@
-package bdd4J;
+package com.github.onliner10.bdd4J;
 
-import bdd4J.delegates.Because;
-import bdd4J.delegates.Cleanup;
-import bdd4J.delegates.Estabilish;
-import bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.delegates.Because;
+import com.github.onliner10.bdd4J.delegates.Cleanup;
+import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.It;
 import junit.framework.AssertionFailedError;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
-import org.omg.CORBA.portable.ApplicationException;
 
 import java.lang.reflect.Field;
 import java.text.MessageFormat;

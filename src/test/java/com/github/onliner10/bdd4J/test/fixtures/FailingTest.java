@@ -1,7 +1,7 @@
-package bdd4J.test.fixtures;
+package com.github.onliner10.bdd4J.test.fixtures;
 
-import bdd4J.Bdd4J;
-import bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.Bdd4J;
+import com.github.onliner10.bdd4J.delegates.It;
 import junit.framework.Assert;
 import org.junit.runner.RunWith;
 
