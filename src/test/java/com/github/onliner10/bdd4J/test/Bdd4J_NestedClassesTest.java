@@ -14,7 +14,7 @@ import static com.github.onliner10.bdd4J.test.helpers.RunnerHelper.RunTest;
 /**
  * Created by mateusz.urban on 10/7/2014.
  */
-public class Bdd4JTests_NestedClasses {
+public class Bdd4J_NestedClassesTest {
     @Before
     public void cleanupTheInvokationList() {
         NestedClasses.invokationOrder.clear();

@@ -25,6 +25,9 @@
         <module name="bdd4J" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bdd4J" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

@@ -21,7 +21,7 @@ import static org.junit.runner.Description.createTestDescription;
 /**
  * Created by Mateusz on 10/4/2014.
  */
-public class Bdd4JTests {
+public class Bdd4JTest {
 
     @Before
     public void setUp() {
