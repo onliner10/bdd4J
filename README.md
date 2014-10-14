@@ -11,7 +11,7 @@ Bdd4J is in central Maven repository, so all you have to do is to add following 
 	            <artifactId>bdd4J</artifactId>
 	            <version>1.0</version>
 	        </dependency>
-	        [...]
+		[...]
 	</dependencies>
 
 ### How can i use it? ###
