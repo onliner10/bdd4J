@@ -19,6 +19,11 @@ import static org.junit.runner.Description.createTestDescription;
 /**
  * Created by Mateusz on 10/4/2014.
  */
+
+/**
+ * JUnit runner for Bdd4J.
+ */
+
 public class Bdd4J extends Runner {
     private Map<It, Description> itToDescription;
     private Class testClass;
