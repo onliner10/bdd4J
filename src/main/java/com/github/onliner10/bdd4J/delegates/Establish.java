@@ -7,6 +7,6 @@ package com.github.onliner10.bdd4J.delegates;
 /**
  * Executes at first when the test runs
  */
-public interface Estabilish {
+public interface Establish {
     void invoke();
 }
