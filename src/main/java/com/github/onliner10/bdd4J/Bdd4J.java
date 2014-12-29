@@ -4,6 +4,7 @@ import com.github.onliner10.bdd4J.delegates.Because;
 import com.github.onliner10.bdd4J.delegates.Cleanup;
 import com.github.onliner10.bdd4J.delegates.Establish;
 import com.github.onliner10.bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.exceptions.ExpectedExceptionNotCaughtException;
 import junit.framework.AssertionFailedError;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
@@ -74,6 +75,11 @@ public class Bdd4J extends Runner {
 
             try {
                 it.invoke();
+            }
+            catch (ExpectedExceptionNotCaughtException e) {
+                runNotifier.fireTestFailure(
+                        new Failure(testDescription, e)
+                );
             }
             catch (AssertionFailedError e) {
                 runNotifier.fireTestFailure(
