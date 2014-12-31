@@ -3,7 +3,7 @@ package com.github.onliner10.bdd4J.test.fixtures;
 import com.github.onliner10.bdd4J.Bdd4J;
 import com.github.onliner10.bdd4J.delegates.Because;
 import com.github.onliner10.bdd4J.delegates.Cleanup;
-import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.Establish;
 import com.github.onliner10.bdd4J.delegates.It;
 import org.junit.runner.RunWith;
 
@@ -18,13 +18,13 @@ import java.util.List;
 public class NestedClasses {
 
     public static List<String> invokationOrder = new ArrayList<String>();
-    Estabilish top_level_estabilish = () -> invokationOrder.add(TOP_LEVEL_ESTABILISH);
+    Establish top_level_establish = () -> invokationOrder.add(TOP_LEVEL_ESTABILISH);
 
     Because top_level_because = () -> invokationOrder.add(TOP_LEVEL_BECAUSE);
 
     public class first_nested_class {
 
-        Estabilish first_nested_estabilish = () -> invokationOrder.add(FIRST_NESTED_ESTABILISH);
+        Establish first_nested_establish = () -> invokationOrder.add(FIRST_NESTED_ESTABILISH);
 
         It first_nested_it = () -> invokationOrder.add(FIRST_NESTED_IT);
 
@@ -33,7 +33,7 @@ public class NestedClasses {
     }
 
     public class second_nested_class {
-        Estabilish second_nested_estabilish = () -> invokationOrder.add(SECOND_NESTED_ESTABILISH);
+        Establish second_nested_establish = () -> invokationOrder.add(SECOND_NESTED_ESTABILISH);
 
         Because nested_because = () -> invokationOrder.add(SECOND_NESTED_BECAUSE);
 

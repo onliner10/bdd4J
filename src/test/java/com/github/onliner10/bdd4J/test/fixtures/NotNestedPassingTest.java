@@ -2,7 +2,7 @@ package com.github.onliner10.bdd4J.test.fixtures;
 
 import com.github.onliner10.bdd4J.delegates.Because;
 import com.github.onliner10.bdd4J.delegates.Cleanup;
-import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.Establish;
 import com.github.onliner10.bdd4J.delegates.It;
 import com.github.onliner10.bdd4J.Bdd4J;
 import org.junit.Assert;
@@ -20,8 +20,8 @@ public class NotNestedPassingTest {
 
     public static List<Class> invokationOrder = new ArrayList<Class>();
 
-    Estabilish that_var_estabilish_run_is_set_to_true = ()
-            -> invokationOrder.add(Estabilish.class);
+    Establish that_var_establish_run_is_set_to_true = ()
+            -> invokationOrder.add(Establish.class);
 
     Because of_changing_variable_value = () -> {
         invokationOrder.add(Because.class);

@@ -2,7 +2,7 @@ package com.github.onliner10.bdd4J.test;
 
 import com.github.onliner10.bdd4J.Bdd4J;
 import com.github.onliner10.bdd4J.delegates.Because;
-import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.Establish;
 import com.github.onliner10.bdd4J.delegates.It;
 import com.github.onliner10.bdd4J.test.fixtures.FailingTest;
 import com.github.onliner10.bdd4J.test.fixtures.MultipleItsTest;
@@ -32,14 +32,14 @@ public class Bdd4JTest {
     public void itIsAbleToRunSingleEstabilish() {
         Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
+        Assert.assertEquals("Establish was not run", NotNestedPassingTest.invokationOrder.get(0), Establish.class);
     }
 
     @Test
     public void itIsAbleToRunSingleBecause() {
         Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
+        Assert.assertEquals("Establish was not run", NotNestedPassingTest.invokationOrder.get(0), Establish.class);
         Assert.assertEquals("Because was not run", NotNestedPassingTest.invokationOrder.get(1), Because.class);
     }
 
@@ -47,7 +47,7 @@ public class Bdd4JTest {
     public void testPassesWithSinglePassingIt() {
         Result result = RunnerHelper.RunTest(NotNestedPassingTest.class);
 
-        Assert.assertEquals("Estabilish was not run", NotNestedPassingTest.invokationOrder.get(0), Estabilish.class);
+        Assert.assertEquals("Establish was not run", NotNestedPassingTest.invokationOrder.get(0), Establish.class);
         Assert.assertEquals("Because was not run", NotNestedPassingTest.invokationOrder.get(1), Because.class);
         Assert.assertEquals("It was not run", NotNestedPassingTest.invokationOrder.get(2), It.class);
     }

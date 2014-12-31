@@ -2,8 +2,9 @@ package com.github.onliner10.bdd4J;
 
 import com.github.onliner10.bdd4J.delegates.Because;
 import com.github.onliner10.bdd4J.delegates.Cleanup;
-import com.github.onliner10.bdd4J.delegates.Estabilish;
+import com.github.onliner10.bdd4J.delegates.Establish;
 import com.github.onliner10.bdd4J.delegates.It;
+import com.github.onliner10.bdd4J.exceptions.ExpectedExceptionNotCaughtException;
 import junit.framework.AssertionFailedError;
 import org.junit.runner.Description;
 import org.junit.runner.Runner;
@@ -44,7 +45,7 @@ public class Bdd4J extends Runner {
     }
 
     private void runClass(Class classToRun, RunNotifier runNotifier) {
-        Map<String, Estabilish> estabilishes = null;
+        Map<String, Establish> estabilishes = null;
         Map<String, Because> becauses = null;
         Map<String, It> its = null;
         Map<String, Cleanup> cleanups = null;
@@ -52,7 +53,7 @@ public class Bdd4J extends Runner {
         try {
             Object testInstance = createInstanceOf(classToRun);
 
-            estabilishes = resolveFieldsOfType(Estabilish.class, testInstance);
+            estabilishes = resolveFieldsOfType(Establish.class, testInstance);
             becauses = resolveFieldsOfType(Because.class, testInstance);
             its = resolveFieldsOfType(It.class, testInstance);
             cleanups = resolveFieldsOfType(Cleanup.class, testInstance);
@@ -60,8 +61,8 @@ public class Bdd4J extends Runner {
             throw new RuntimeException("Cannot resolve required delegates to run test");
         }
 
-        for (Estabilish estabilish : estabilishes.values()) {
-            estabilish.invoke();
+        for (Establish establish : estabilishes.values()) {
+            establish.invoke();
         }
 
         for(Because because : becauses.values()) {
@@ -74,6 +75,11 @@ public class Bdd4J extends Runner {
 
             try {
                 it.invoke();
+            }
+            catch (ExpectedExceptionNotCaughtException e) {
+                runNotifier.fireTestFailure(
+                        new Failure(testDescription, e)
+                );
             }
             catch (AssertionFailedError e) {
                 runNotifier.fireTestFailure(
