@@ -1,5 +1,5 @@
 ## What's bdd4J ? ##
-Bdd4J is a BDD (Behaviour Drivven Development) test runner for **JUnit** inspired on Machine.Specifications (MSpec). It means, that anywhere you can use JUnit, you can use bdd4J without any effort.
+Bdd4J is a BDD (Behaviour Driven Development) test runner for **JUnit** inspired on Machine.Specifications (MSpec). It means, that anywhere you can use JUnit, you can use bdd4J without any effort.
 
 ### How can I install it? ###
 Bdd4J is in central Maven repository, so all you have to do is to add following lines to your pom.xml
